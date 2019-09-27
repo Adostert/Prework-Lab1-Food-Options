@@ -19,10 +19,7 @@ public class FoodOptions {
 		System.out.println("What is your name?");
 		
 		name = scanner.nextLine();
-		
-//		System.out.println("Enter the number of people enjoying dinner with you: ");
-//		
-//		numGuests = scanner.nextInt();
+
 		
 		System.out.println("What kind of event are you enjoying tonight? Casual, Semiformal or Formal");
 		eventType = scanner.nextLine();
@@ -45,17 +42,18 @@ public class FoodOptions {
 			mealPrep = "in your microwave";
 		}
 			
-			else if (numGuests > 1 && numGuests < 13) {
+		else if (numGuests > 1 && numGuests < 13) {
 				mealPrep = "in your kitchen!";
-				
-			}
-			else {
+			
+		}
+		
+		else {
 				mealPrep = "by catering!";
 			}
 		
 
  
-		System.out.println("Since you’re hosting a " +  eventType + " event for " + numGuests + " participants, you should serve " + meal + " prepared " + mealPrep);
+		System.out.println("Since youâ€™re hosting a " +  eventType + " event for " + numGuests + " participants, you should serve " + meal + " prepared " + mealPrep);
 		
 
 
